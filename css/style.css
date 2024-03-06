@@ -3,8 +3,8 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 .card {
-  overflow: hiddsen;
-  border-radius: 20%;
+  overflow: hidden;
+  border-radius: 10%;
   width: 350px;
   height: 460px;
   position: relative;
@@ -18,7 +18,7 @@ body {
 }
 .card img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .buttonSave p {
   align-items: center;
@@ -47,25 +47,39 @@ body {
   border-radius: 50%;
   background-color: aliceblue;
   position: absolute;
-  top: 104%;
   right: 30%;
   transition: transform 1s;
 }
 .card:hover .upload {
   transform: translateY(-70px);
 }
-.dots {
+.more {
   width: 40px;
   height: 40px;
   overflow: hidden;
   border-radius: 50%;
   background-color: aliceblue;
   position: absolute;
-  top: 104%;
   right: 10%;
   transition: transform 1s;
 }
-.card:hover .dots {
+.name {
+  position: absolute;
+  right: 60%;
+  width: fit-content;
+  height: 40px;
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 40%;
+  transition:transform 1s;
+}
+.card:hover .name{
+    transform: translateY(-70px);
+}
+.name p {
+  display: inline-block;
+}
+.card:hover .more {
   transform: translateY(-70px);
 }
 button {

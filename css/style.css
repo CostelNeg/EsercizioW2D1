@@ -1,0 +1,41 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.card {
+
+  overflow: hidden;
+  border-radius: 10%;
+  width: 350px;
+  height: 470px;
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  transition: box-shadow 0.5s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.buttonSave {
+  position: absolute;
+  border: 1px solid red;
+  width: 15%;
+  height: 5%;
+  background-color: red;
+  color: whitesmoke;
+  border-radius: 40%;
+  font-weight: bold;
+  text-align: center;
+  top: 0%;
+  right: -60px;
+  transition: transform 1s;
+}
+.card:hover .buttonSave {
+  transform: translateX(-70px);
+}
+
